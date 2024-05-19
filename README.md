@@ -1,4 +1,6 @@
-### **Análise Exploratória de Dados - Empregos e salários em Ciência de Dados 🔍**
+### **Empregos e salários em Ciência de Dados 🔍**
+
+Esse projeto tem como objetivo realizar uma análise exploratória de um conjunto de dados disponibilizado no kaggle. Quais informações relevantes é possível extrair e como transformar isso em visualizações interessantes?
 
 Link do Dataset: [Jobs and Salaries in Data Science](https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data)
 
