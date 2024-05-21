@@ -25,3 +25,17 @@ Para começar entender melhor as informações do conjunto de dados, criei um no
 | Data Quality and Operations    |           45 |           0.842539|
 | Cloud and Database             |            5 |           0.093615|
 
+Essa é a proporção da quantidade de vagas pelo nível de experiência exigido:
+
+| Experiência  | Quantidade  | Porcentagem (%) |
+|--------------|-------------|-----------------|
+| Senior       | 3444        | 64.482307       |
+| Mid-level    | 1274        | 23.853211       |
+| Entry-level  | 400         | 7.489234        |
+| Executive    | 223         | 4.175248        |
+
+Transformando esses resultados em subplots com o [Matplotlib](https://matplotlib.org/):
+
+![subplot1](https://github.com/ryanrodr/eda-jobs-in-data/blob/main/imagens/subplots1.png)
+
+Analisando dessa forma é correto identificar que existe uma predominância por profissionais de um nível mais Sênior. Somando os dois principais níveis de experiências conseguimos observar que aproximadamente **88%** das vagas está destinada aos níveis **Senior** e **Mid-level**.
