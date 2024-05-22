@@ -1,6 +1,6 @@
 ## **Empregos e salários em Ciência de Dados 🔍**
 
-Esse projeto tem como objetivo realizar uma análise exploratória de um conjunto de dados disponibilizado no kaggle. Quais informações relevantes é possível extrair e como criar visualizações gráficas interessantes?
+Esse projeto tem como objetivo realizar uma análise exploratória de um conjunto de dados disponibilizado no Kaggle. Quais informações relevantes é possível extrair e como criar visualizações gráficas interessantes?
 
 Link do Dataset: [Jobs and Salaries in Data Science](https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data)
 
@@ -8,34 +8,47 @@ Link do Dataset: [Jobs and Salaries in Data Science](https://www.kaggle.com/data
 
 Realizei todo o processo de carregamento, limpeza e preparação dos dados utilizando a biblioteca [Pandas](https://pandas.pydata.org/). Defini tipos de dados adequados para cada coluna, o que permitiu trabalhar eficientemente com dados categóricos.
 
-Para começar entender melhor as informações do conjunto de dados, criei um novo DataFrame contendo a contagem do número de valores com uma nova coluna em porcentagem e as primeiras conclusões que conseguimos identificar:
+#### Limpeza e Preparação dos Dados:
+- Carregamento dos dados.
+- Tratamento de valores ausentes.
+- Remoção de duplicatas.
+- Conversão de tipos de dados.
 
- A maior parte dos empregos está distribuido nas áreas de **Data Science and Research**, **Data Engineering**, **Machine Learning and AI** e **Data Analysis**. Correspondendo a aproximadamente **85%** do conjunto de dados.
+### Análise Inicial:
 
-| Categoria                      |   Quantidade |   Porcentagem (%) |
-|:-------------------------------|-------------:|------------------:|
-| Data Science and Research      |         1655 |          30.9867  |
-| Data Engineering               |         1160 |          21.7188  |
-| Machine Learning and AI        |          917 |          17.1691  |
-| Data Analysis                  |          809 |          15.147   |
-| Leadership and Management      |          351 |           6.5718  |
-| BI and Visualization           |          188 |           3.51994 |
-| Data Architecture and Modeling |          162 |           3.03314 |
-| Data Management and Strategy   |           49 |           0.917431|
-| Data Quality and Operations    |           45 |           0.842539|
-| Cloud and Database             |            5 |           0.093615|
+Para começar a entender melhor as informações do conjunto de dados, criei um novo DataFrame contendo a contagem do número de valores com uma nova coluna em porcentagem e as primeiras conclusões que conseguimos identificar:
 
-Essa é a proporção da quantidade de vagas pelo nível de experiência exigido:
+A maior parte dos empregos está distribuída nas áreas de **Data Science and Research**, **Data Engineering**, **Machine Learning and AI** e **Data Analysis**. Correspondendo a aproximadamente **85%** do conjunto de dados.
 
-| Experiência  | Quantidade  | Porcentagem (%) |
-|--------------|-------------|-----------------|
-| Senior       | 3444        | 64.482307       |
-| Mid-level    | 1274        | 23.853211       |
-| Entry-level  | 400         | 7.489234        |
-| Executive    | 223         | 4.175248        |
+| **Categoria**                      |   **Quantidade** |   **Porcentagem (%)** |
+|:-----------------------------------|-----------------:|----------------------:|
+| Data Science and Research          |              1655|                30.9867|
+| Data Engineering                   |              1160|                21.7188|
+| Machine Learning and AI            |               917|                17.1691|
+| Data Analysis                      |               809|                15.147 |
+| Leadership and Management          |               351|                 6.5718|
+| BI and Visualization               |               188|                 3.51994|
+| Data Architecture and Modeling     |               162|                 3.03314|
+| Data Management and Strategy       |                49|                 0.917431|
+| Data Quality and Operations        |                45|                 0.842539|
+| Cloud and Database                 |                 5|                 0.093615|
 
-Transformando esses resultados em subplots com o [Matplotlib](https://matplotlib.org/):
+### Distribuição Temporal das Categorias:
 
-![subplot1](https://github.com/ryanrodr/eda-jobs-in-data/blob/main/imagens/subplots1.png)
+Os dados foram coletados entre 2020 e 2023. 
 
-Analisando dessa forma é correto identificar que existe uma predominância por profissionais de um nível mais Sênior. Somando os dois principais níveis de experiências conseguimos observar que aproximadamente **88%** das vagas está destinada aos níveis **Senior** e **Mid-level**.
+Com a função `pandas.crosstab`, conseguimos criar uma visualização entre duas variáveis: **Ano de Pesquisa** e **Categoria**. Criando uma tabela que conta a frequência de cada categoria pelos anos de coleta dos dados.
+
+| Ano de Pesquisa                | 2020 | 2021 | 2022 | 2023 |
+|--------------------------------|------|------|------|------|
+| **Categoria**                  |      |      |      |      |
+| BI and Visualization           | 0    | 0    | 8    | 180  |
+| Cloud and Database             | 0    | 0    | 2    | 3    |
+| Data Analysis                  | 15   | 28   | 185  | 581  |
+| Data Architecture and Modeling | 0    | 5    | 30   | 127  |
+| Data Engineering               | 17   | 44   | 286  | 813  |
+| Data Management and Strategy   | 0    | 1    | 10   | 38   |
+| Data Quality and Operations    | 0    | 0    | 8    | 37   |
+| Data Science and Research      | 29   | 71   | 338  | 1217 |
+| Leadership and Management      | 0    | 9    | 71   | 271  |
+| Machine Learning and AI        | 10   | 37   | 157  | 713  |
