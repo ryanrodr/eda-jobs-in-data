@@ -8,14 +8,6 @@ Link do Dataset: [Jobs and Salaries in Data Science](https://www.kaggle.com/data
 
 Realizei todo o processo de carregamento, limpeza e preparação dos dados utilizando a biblioteca [Pandas](https://pandas.pydata.org/). Defini tipos de dados adequados para cada coluna, o que permitiu trabalhar eficientemente com dados categóricos.
 
-#### Limpeza e Preparação dos Dados:
-- Carregamento dos dados.
-- Tratamento de valores ausentes.
-- Remoção de duplicatas.
-- Conversão de tipos de dados.
-
-### Análise Inicial:
-
 Para começar a entender melhor as informações do conjunto de dados, criei um novo DataFrame contendo a contagem do número de valores com uma nova coluna em porcentagem e as primeiras conclusões que conseguimos identificar:
 
 A maior parte dos empregos está distribuída nas áreas de **Data Science and Research**, **Data Engineering**, **Machine Learning and AI** e **Data Analysis**. Correspondendo a aproximadamente **85%** do conjunto de dados.
@@ -52,3 +44,5 @@ Com a função `pandas.crosstab`, conseguimos criar uma visualização entre dua
 | Data Science and Research      | 29   | 71   | 338  | 1217 |
 | Leadership and Management      | 0    | 9    | 71   | 271  |
 | Machine Learning and AI        | 10   | 37   | 157  | 713  |
+
+Olhando pelo contexto temporal é possível identificar uma crescente evolução das categorias pelo ano de 2023. Algumas categorias cresceram o dobro, triplo e quase quatro vezes mais quando comparadas com o ano anterior de 2022.
