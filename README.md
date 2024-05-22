@@ -29,7 +29,14 @@ A maior parte dos empregos está distribuída nas áreas de **Data Science and R
 
 Os dados foram coletados entre 2020 e 2023. 
 
-Com a função `pandas.crosstab`, conseguimos criar uma visualização entre duas variáveis: **Ano de Pesquisa** e **Categoria**. Criando uma tabela que conta a frequência de cada categoria pelos anos de coleta dos dados. Olhando pelo contexto temporal é possível identificar uma crescente evolução das categorias pelo ano de 2023. Algumas categorias cresceram o dobro, triplo e quase quatro vezes mais quando comparadas com o ano anterior de 2022.
+Visualizando o DataFrame anterior com um contexto temporal, é possível entender melhor o conjunto de dados e tirar algumas conclusões:
+
+- Crescimento significativo nos anos de 2022 e 2023 em quase todas as categorias. Isso indica uma demanda crescente por profissionais de Ciência de Dados.
+
+- Pelo menos seis categorias não existiam em 2020. Isso mostra a evolução e diversificação das funções e especializações das áreas de atuação.
+
+- A alta demanda em Machine Learning and AI, Data Engineering e Data Science and Research pode estar ligada ao crescente avanço em Inteligência Artificial.
+
 
 | Ano de Pesquisa                | 2020 | 2021 | 2022 | 2023 |
 |--------------------------------|------|------|------|------|
