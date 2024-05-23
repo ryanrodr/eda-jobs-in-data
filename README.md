@@ -6,7 +6,7 @@ Link do Dataset: [Jobs and Salaries in Data Science](https://www.kaggle.com/data
 
 ### Introdução e primeiros passos do projeto:
 
-Realizei todo o processo de carregamento, limpeza e preparação dos dados utilizando a biblioteca [Pandas](https://pandas.pydata.org/). Defini tipos de dados adequados para cada coluna, o que permitiu trabalhar eficientemente com dados categóricos.
+Realizei todo o processo de carregamento, limpeza e preparação dos dados utilizando a biblioteca Pandas. Defini tipos de dados adequados para cada coluna, o que permitiu trabalhar eficientemente com dados categóricos.
 
 Para começar a entender melhor as informações do conjunto de dados, criei um novo DataFrame contendo a contagem do número de valores com uma nova coluna em porcentagem e as primeiras conclusões que conseguimos identificar:
 
@@ -51,3 +51,9 @@ Visualizando o DataFrame anterior com um contexto temporal, é possível entende
 | Data Science and Research      | 29   | 71   | 338  | 1217 |
 | Leadership and Management      | 0    | 9    | 71   | 271  |
 | Machine Learning and AI        | 10   | 37   | 157  | 713  |
+
+### Distribuição das Categorias pelo Nível de Experiência:
+
+Cada categoria de atuação em Ciência de Dados exige um nível de experiência diferente e isso pode ser visualizado de forma prática com um mapa de calor do Seaborn. Transformei a visualização em percentual de modo que possa visualização a distribuição de cada categoria e suas respectivas vagas pelo nível de experiência.
+
+![heatmap](https://github.com/ryanrodr/eda-jobs-in-data/blob/main/imagens/heatmap.png)
