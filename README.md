@@ -67,6 +67,6 @@ Conseguimos concluir que mais da metade do conjunto de dados está destinado a v
 
 - É evidente a proporção da quantidade de vagas de nível **Senior**.
 - **Cloud and Database** tem preferência por profissionais apenas de nível Senior.
-- **Data Analysis** e **Data Management and Strategy** tendem a ter mais oportunidades de entrada no nível Entry-level.
+- **Data Analysis** e **Data Management and Strategy** tendem a ter mais oportunidades de entrada.
 
 ![heatmap1](https://github.com/ryanrodr/eda-jobs-in-data/blob/main/imagens/heatmap1.png)
