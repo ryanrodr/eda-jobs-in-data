@@ -54,6 +54,17 @@ Visualizando o DataFrame anterior com um contexto temporal, é possível entende
 
 ### Distribuição das Categorias pelo Nível de Experiência:
 
-Cada categoria de atuação em Ciência de Dados exige um nível de experiência diferente e isso pode ser visualizado de forma prática com um mapa de calor do Seaborn. Transformei a visualização em percentual de modo que possa visualização a distribuição de cada categoria e suas respectivas vagas pelo nível de experiência.
+Existem diferentes níveis de experiência para cada área de atuação.
 
-![heatmap](https://github.com/ryanrodr/eda-jobs-in-data/blob/main/imagens/heatmap.png)
+| Experiência   | Quantidade | Porcentagem (%) |
+|---------------|------------|-----------------|
+| Senior        | 3444       | 64.482307       |
+| Mid-level     | 1274       | 23.853211       |
+| Entry-level   | 400        | 7.489234        |
+| Executive     | 223        | 4.175248        |
+
+Conseguimos concluir que mais que a metade do conjunto de dados está destinado a vagas de um nível **Senior**. Como está distribuido essas informações para cada categoria?
+
+Com a biblioteca Seaborn é possível gerar um HeatMap com esses dados. Transformei os valores em porcentagem pelo eixo das linhas, de modo que seja possível enxergar a distribuição de cada categoria pelo seu nível de experiência exigido.
+
+![heatmap1](https://github.com/ryanrodr/eda-jobs-in-data/blob/main/imagens/heatmap1.png)
