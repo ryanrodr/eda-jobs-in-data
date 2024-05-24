@@ -63,6 +63,10 @@ Existem diferentes níveis de experiência para cada área de atuação.
 | Entry-level   | 400        | 7.489234        |
 | Executive     | 223        | 4.175248        |
 
+Criando uma visualização com subplots do matplotlib.
+
+![subplots1](https://github.com/ryanrodr/eda-jobs-in-data/blob/main/imagens/subplots1.png)
+
 Conseguimos concluir que mais da metade do conjunto de dados está destinado a vagas de nível Senior, mas como seria essa distribuição entre as categorias de atuação em Ciência de Dados? Com a biblioteca Seaborn, é possível gerar um heatmap com esses dados, transformando os valores em porcentagens pelo eixo das linhas, o que facilita a visualização da distribuição de vagas pelo seu nível de experiência.
 
 - É evidente a proporção da quantidade de vagas de nível **Senior**.
