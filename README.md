@@ -2,7 +2,7 @@
 
 Esse projeto tem como objetivo realizar uma análise exploratória de um conjunto de dados disponibilizado no Kaggle. Quais informações relevantes é possível extrair e como criar visualizações gráficas interessantes?
 
-Link do Dataset: [Jobs and Salaries in Data Science](https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data)
+Link do Dataset: [Jobs and Salaries in Data field 2024](https://www.kaggle.com/datasets/murilozangari/jobs-and-salaries-in-data-field-2024)
 
 ### Introdução
 
@@ -29,7 +29,6 @@ A maior parte dos empregos está distribuída nas áreas de **Data Science and R
 ![pareto](https://github.com/ryanrodr/eda-jobs-in-data/blob/main/imagens/distribuicao_pareto.png)
 
 ### Nível de Experiência
-
 Existem diferentes níveis de experiência para cada área de atuação.
 
 | Experiência  | Quantidade | Porcentagem (%) |
@@ -39,11 +38,9 @@ Existem diferentes níveis de experiência para cada área de atuação.
 | Entry-level  | 1063       | 7.486443        |
 | Executive    | 416        | 2.929784        |
 
-Conseguimos concluir que mais da metade do conjunto de dados está destinado a vagas de nível Senior, mas como seria essa distribuição entre as categorias de atuação em Ciência de Dados? Com a biblioteca Seaborn, é possível gerar um heatmap com esses dados, transformando os valores em porcentagens pelo eixo das linhas, o que facilita a visualização da distribuição de vagas pelo seu nível de experiência.
+Conseguimos concluir que mais da metade do conjunto de dados está destinado a vagas de nível Senior, mas como seria essa distribuição entre as categorias de atuação em Ciência de Dados?
 
 ### Nível de Experiência com HeatMap
-![heatmap](https://github.com/ryanrodr/eda-jobs-in-data/blob/main/imagens/heatmap.png)
+Com a biblioteca Seaborn, é possível gerar um mapa de calor com esses dados, transformando os valores em porcentagens pelo eixo das linhas, o que facilita a visualização da distribuição de vagas pelo seu nível de experiência.
 
-- É evidente a proporção da quantidade de vagas de nível **Senior**.
-- **Cloud and Database** tem preferência por profissionais apenas de nível Senior.
-- **Data Analysis** e **Data Management and Strategy** tendem a ter mais oportunidades de entrada.
+![heatmap](https://github.com/ryanrodr/eda-jobs-in-data/blob/main/imagens/heatmap.png)
